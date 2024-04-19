@@ -1,4 +1,3 @@
-
 public class PuntoTiempo extends Punto { 
 
     private int t;
