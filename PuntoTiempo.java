@@ -1,25 +1,23 @@
-public class PuntoTiempo extends Punto {
+
+public class PuntoTiempo extends Punto { 
+
     private int t;
-
-    public PuntoTiempo() {
-        super();
-        this.setT(0);
+    
+    public PuntoTiempo () 
+    {this (0,0,0);}
+    
+    
+    
+    public PuntoTiempo (int x, int y, int t) 
+    
+    {super (x, y);
+    this.setT (t);
     }
-
-    public PuntoTiempo(int x, int y, int t) {
-        super(x, y);
-        this.setT(t);
-    }
-
-    public int getT() {
-        return this.t;
-    }
-
-    public final void setT(int t) {
-        this.t = t;
-    }
-
-    public double velocidad() {
-        return this.modulo() / this.getT();
-    }
+    
+    public int getT() {return this.t;}
+    
+    public final void setT (int t) {this.t = t;}
+    
+    public double velocidad () 
+    {return this.modulo ()/this.getT();}
 }
