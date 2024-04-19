@@ -8,9 +8,10 @@ public class Punto {
     }
     
     public Punto (){
-        this.x=0;  
+        
+        this.x=0;
         this.y=0;
- }
+                  }
      
     
     
@@ -23,6 +24,8 @@ public class Punto {
     
     public double modulo () 
     {
-    return Math.sqrt((this.x * this.x) +(this.y * this.y));
+    return Math.sqrt((this.x *this.x) +(this.y* this.y));
     }
+
 }
+
